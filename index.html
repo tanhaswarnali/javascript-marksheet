@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <table  class="table table-striped table-dark" >
+		<tr class="h4 text-center thead-light">
+			<th>#Sl. No</th>
+			<th>Subject Name</th>
+			<th>Subject Code</th>
+			<th>Theory Mark</th>
+			<th>Practical Mark</th>
+			<th>Total Mark</th>
+			<th>Grad</th>
+			<th>Point</th>
+			<th>Action</th>
+		</tr>
+		<tr class="h5">
+			<td>01</td>
+			<td>Bangla Frist Pepar</td>
+			<td>1001</td>
+			<td>
+				<input type="text"  id="tm" >
+			</td>
+			<td>
+				<input type="text" id="pm">
+			</td>
+			<td>
+				<input type="text" id="ttm">
+			</td>
+			<td>
+				<input type="text" id="grad">
+			</td>
+			<td>
+				<input type="text" id="point">
+			</td>
+			<td>
+				<input type="button"  class="btn btn-primary" onclick="result1()" value="Get Result">
+			</td>
+		</tr>
+        <tr class="h5 ">
+			<td>02</td>
+			<td>Bangla Second Pepar</td>
+			<td>1002</td>
+			<td>
+				<input type="text" id="tm1" >
+			</td>
+			<td>
+				<input type="text" id="pm1">
+			</td>
+			<td>
+				<input type="text" id="ttm1">
+			</td>
+			<td>
+				<input type="text" id="grad1">
+			</td>
+			<td>
+				<input type="text"id="point1">
+			</td>
+			<td>
+				<input type="button" class="btn btn-primary" onclick="result2()" value="Get Result">
+			</td>
+		</tr>
+        <tr class="h5">
+			<td>03</td>
+			<td>English 1st Pepar</td>
+			<td>1003</td>
+			<td>
+				<input type="text" id="tm2">
+			</td>
+			<td>
+				<input type="text" id="pm2">
+			</td>
+			<td>
+				<input type="text" id="ttm2">
+			</td>
+			<td>
+				<input type="text" id="grad2">
+			</td>
+			<td>
+				<input type="text" id="point2">
+			</td>
+			<td>
+				<input type="button" class="btn btn-primary" onclick="result3()" value="Get Result">
+			</td>
+		</tr>
+		
+        <tr class="h5">
+			<td>04</td>
+			<td>English 2nd Pepar</td>
+			<td>1004</td>
+			<td>
+				<input type="text" id="tm4">
+			</td>
+			<td>
+				<input type="text" id="pm4">
+			</td>
+			<td>
+				<input type="text" id="ttm4">
+			</td>
+			<td>
+				<input type="text" id="grad4">
+			</td>
+			<td>
+				<input type="text" id="point4">
+			</td>
+			<td>
+				<input type="button" class="btn btn-primary" onclick="result4()" value="Get Result">
+			</td>
+		</tr>
+        <tr class="h5">
+			<td>05</td>
+			<td>Bangladesh studies</td>
+			<td>1005</td>
+			<td>
+				<input type="text" id="tm5"">
+			</td>
+			<td>
+				<input type="text" id="pm5" >
+			</td>
+			<td>
+				<input type="text" id="ttm5">
+			</td>
+			<td>
+				<input type="text" id="grad5">
+			</td>
+			<td>
+				<input type="text" id="point5">
+			</td>
+			<td>
+				<input type="button"class="btn btn-primary" onclick="result5()" value="Get Result">
+			</td>
+		</tr>
+        <tr class="h5">
+			<td>06</td>
+			<td>Mathematics</td>
+			<td>1006</td>
+			<td>
+				<input type="text" id="tm6" >
+			</td>
+			<td>
+				<input type="text" id="pm6">
+			</td>
+			<td>
+				<input type="text" id="ttm6">
+			</td>
+			<td>
+				<input type="text" id="grad6">
+			</td>
+			<td>
+				<input type="text" id="point6">
+			</td>
+			<td>
+				<input type="button"class="btn btn-primary"  onclick="result6()" value="Get Result">
+			</td>
+		</tr>
+		
+        <tr class="h5">
+			<td>07</td>
+			<td>physics</td>
+			<td>1007</td>
+			<td>
+				<input type="text" id="tm7" >
+			</td>
+			<td>
+				<input type="text" id="pm7" >
+			</td>
+			<td>
+				<input type="text" id="ttm7">
+			</td>
+			<td>
+				<input type="text" id="grad7">
+			</td>
+			<td>
+				<input type="text" id="point7">
+			</td>
+			<td>
+				<input type="button" class="btn btn-primary" onclick="result7()" value="Get Result">
+			</td>
+		</tr>
+		
+        <tr class="h5">
+			<td>08</td>
+			<td>chemistry</td>
+			<td>1008</td>
+			<td>
+				<input type="text" id="tm8" >
+			</td>
+			<td>
+				<input type="text" id="pm8" >
+			</td>
+			<td>
+				<input type="text" id="ttm8">
+			</td>
+			<td>
+				<input type="text" id="grad8">
+			</td>
+			<td>
+				<input type="text" id="point8">
+			</td>
+			<td>
+				<input type="button" class="btn btn-primary" onclick="result8()" value="Get Result">
+			</td>
+		</tr>
+        <tr class="h5">
+			<td>09</td>
+			<td>Biology</td>
+			<td>1009</td>
+			<td>
+				<input type="text" id="tm9" >
+			</td>
+			<td>
+				<input type="text" id="pm9" >
+			</td>
+			<td>
+				<input type="text" id="ttm9">
+			</td>
+			<td>
+				<input type="text" id="grad9">
+			</td>
+			<td>
+				<input type="text" id="point9">
+			</td>
+			<td>
+				<input type="button" class="btn btn-primary" onclick="result9()" value="Get Result">
+			</td>
+		</tr>
+		
+        
+        <tr class="h5">
+			<td>10</td>
+			<td>ICT</td>
+			<td>10110</td>
+			<td>
+				<input type="text" id="tm10" >
+			</td>
+			<td>
+				<input type="text" id="pm10" >
+			</td>
+			<td>
+				<input type="text" id="ttm10">
+			</td>
+			<td>
+				<input type="text" id="grad10">
+			</td>
+			<td>
+				<input type="text" id="point10">
+			</td>
+			<td>
+				<input type="button"class="btn btn-primary"  onclick="result10()" value="Get Result">
+			</td>
+		</tr>
+
+        <tr class="h5">
+			<td>11</td>
+			<td>Speaking English</td>
+			<td>10111</td>
+			<td>
+				<input type="text" id="tm11" >
+			</td>
+			<td>
+				<input type="text" id="pm11" >
+			</td>
+			<td>
+				<input type="text" id="ttm11">
+			</td>
+			<td>
+				<input type="text" id="grad11">
+			</td>
+			<td>
+				<input type="text" id="point11">
+			</td>
+			<td>
+				<input type="button" class="btn btn-primary" onclick="result11()" value="Get Result">
+			</td>
+		</tr>
+        <tr><th colspan="9"><hr style="background: blue; height: 1px; border: none;" ></th></tr>
+		<tr class="h4">
+			<td class="font-weight-bold text-center"colspan="5">Total Calculation</td>
+			<td>
+				<input type="text" id="totalMark">
+			</td>
+			<td>
+				<input type="text" id="totalgrade">
+			</td>
+			<td>
+				<input type="text" id="totalPoint">
+			</td>
+			<td>
+				<input type="button" class="btn btn-danger" value="Result" onclick="finalResult()">
+			</td>
+		</tr>
+	</table>
+    <script src="script.js"></script>
+	
+</body>
+</html>
